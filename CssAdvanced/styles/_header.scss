@@ -1,0 +1,38 @@
+header {
+    background-color: $witeColor;
+    margin: 2em;
+    border: 3em;
+    border-radius: 2em;
+    h1 {
+        padding: 1.5em;
+        font-size: 1.4em;
+        text-align: left;
+        line-height: 2em;
+    }
+    nav {
+        text-align: center;
+    }
+    .avatar {
+        width: 7em;
+        border-radius: 100%;
+        border: .5em $witeColor solid;
+    }
+    footer {
+        background-color: #686de0;
+        color: rgb(185, 180, 180);
+        border-bottom-left-radius: 2em;
+        border-bottom-right-radius: 2em;
+        margin-top: -4em;
+        text-align: center;
+        padding-top: 4em;
+        padding-bottom: 1.5em;
+    }
+    h2 {
+        color: $witeColor;
+    }
+}
+@media screen and (min-width:500px) {
+    header {
+        max-width: 448px;
+    }
+}

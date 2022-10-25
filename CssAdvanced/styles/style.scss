@@ -1,0 +1,8 @@
+@import './variable';
+@import './header';
+@import './grid';
+@import './media';
+body {
+    background-color: $primaryBtn;
+    height: 100%;
+}

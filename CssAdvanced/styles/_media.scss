@@ -1,0 +1,133 @@
+@mixin media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 200px;
+    transition: 300ms ease-in;
+}
+@mixin social {
+    margin-right: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+aside {
+    position: fixed;
+    right: 0;
+    bottom: 75px;
+    z-index: 3;
+}
+.media-social {
+    @include media();
+    flex-direction: column;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    left: 150px;
+    .mijn-blog {
+        @include media();
+        background-color: #e17b77;
+      }
+      .mijn-blog::before {
+        font-family: 'my-icons';
+        
+        color: $witeColor;
+        content: "\f022";
+        margin: 10px 10px;
+    }
+      
+    .mijn-blog:hover {
+        transform: translate(-150px);
+    }
+      
+    .blog-link {
+        @include social();
+        color: $witeColor;
+    }
+    .mijn-twitter {
+        @include media();
+        background-color: #00aced;
+    }
+    .mijn-twitter::before {
+        font-family: 'my-brands';
+        
+        color: $witeColor;
+        content: "\f099";
+        margin: 10px 10px;
+        margin-left: 11px;
+    }
+     
+    .mijn-twitter:hover {
+        transform: translate(-150px);
+    }
+    .twitter-link {
+        @include social();
+        color: $witeColor;
+    }
+      
+    .mijn-linkedin {
+        @include media();
+        background-color: #007bb6;
+    }
+      
+    .mijn-linkedin::before {
+        font-family: 'my-brands';
+        color: $witeColor;
+        content: "\f0e1";
+        margin: 10px 10px;
+        margin-left: 12px;
+        margin-top: 14px;
+    }
+     
+    .mijn-linkedin:hover {
+        transform: translate(-150px);
+    }
+      
+    .linkedin-link {
+        @include social();
+        color: $witeColor;
+    }
+    .mijn-facebook {
+        @include media();
+        background-color: #3b5998;
+    }
+      
+    .mijn-facebook::before {
+        font-family: 'my-brands';
+        color: $witeColor;
+        content: "\f39e";
+        margin: 10px 10px;
+        margin-left: 15px;
+    }
+
+    .mijn-facebook:hover {
+        transform: translate(-150px);
+    }
+      
+    .facebook-link {
+        @include social();
+        color: $witeColor;
+    }
+    .mijn-github {
+        @include media();
+        background-color: #333;
+    }
+      
+    .mijn-github::before {
+        font-family: 'my-brands';
+        color: $witeColor;
+        content: "\f09b";
+        margin: 10px 10px;
+    }
+    
+    .mijn-github:hover {
+        transform: translate(-150px);
+    }
+      
+    .github-link {
+        @include social();
+        color: $witeColor;
+    } 
+}
